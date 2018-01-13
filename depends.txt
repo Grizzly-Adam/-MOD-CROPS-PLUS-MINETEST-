@@ -2,4 +2,3 @@ craft_guide?
 default
 farming
 intllib?
-bbq?

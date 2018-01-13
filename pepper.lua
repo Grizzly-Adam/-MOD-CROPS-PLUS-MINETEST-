@@ -1,30 +1,15 @@
 
 --[[
 
-Copyright (C) 2015 - Auke Kok <sofar@foo-projects.org>
+Copyright (C) 2018 - Grizzly Adam
+
+Based on Crops by Auke Kok <sofar@foo-projects.org>
 
 "crops" is free software; you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as
 published by the Free Software Foundation; either version 2.1
 of the license, or (at your option) any later version.
 --]]
-if  minetest.registered_items["bbq:peppercorn"] ~= nil then
-
-minetest.override_item("bbq:peppercorn", {
-    	on_place = function(itemstack, placer, pointed_thing)
-		local under = minetest.get_node(pointed_thing.under)
-		if minetest.get_item_group(under.name, "soil") <= 1 then
-			return
-		end
-		crops.plant(pointed_thing.above, {name="crops:pepper_plant_1", param2 = 1})
-		if not minetest.setting_getbool("creative_mode") then
-			itemstack:take_item()
-		end
-		return itemstack
-	end
-	})
-end
-
 
 minetest.register_node("crops:pepper_ground", {
 	description = ("Ground Pepper"),
@@ -78,6 +63,22 @@ minetest.register_node("crops:peppercorn", {
 		return itemstack
 	end
 })
+
+if  minetest.registered_items["bbq:peppercorn"] ~= nil then
+minetest.override_item("bbq:peppercorn", {
+    	on_place = function(itemstack, placer, pointed_thing)
+		local under = minetest.get_node(pointed_thing.under)
+		if minetest.get_item_group(under.name, "soil") <= 1 then
+			return
+		end
+		crops.plant(pointed_thing.above, {name="crops:pepper_plant_1", param2 = 1})
+		if not minetest.setting_getbool("creative_mode") then
+			itemstack:take_item()
+		end
+		return itemstack
+	end
+	})
+end
 
 for stage = 1, 4 do
 minetest.register_node("crops:pepper_plant_" .. stage , {

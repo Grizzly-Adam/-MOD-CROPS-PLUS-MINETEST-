@@ -1,12 +1,6 @@
-# -MOD-CROPS-PLUS-MINETEST-
-A small change to the great Crops mod by Auke Kok. Added pepper plants, peppercorns, and ground pepper.
+## Crops Plus - by Grizzly Adam
 
-## Crops - more farming crops mod for minetest
-
-Copyright (C) 2015 - Auke Kok <sofar@foo-projects.org>
-
-This minetest mod expands the basic set of farming-related crops that
-`minetest_game` offers. A list of crops/crafts is below.
+Based on Crops by Auke Kok <sofar@foo-projects.org>
 
 ## Configuration
 
@@ -14,6 +8,8 @@ A default configuration file, `crops_settings.txt` will be added
 to your world folder that contains suggested `easy`, `normal` (the
 default) and `difficult` settings for this mod. You can currently tune
 the ABM interval/chance, and required light level for plant growth.
+
+I have set Crops Plus to 'easy' by default.
 
 ## Hydration mechanic
 
