@@ -1,9 +1,9 @@
 
 --[[
+Copyright (C) 2018 Grizzly Adam
+Copyright (C) 2015-2017 Auke Kok <sofar@foo-projects.org>
 
-Copyright (C) 2015 - Auke Kok <sofar@foo-projects.org>
-
-"crops" is free software; you can redistribute it and/or modify
+"Crops Plus" is free software based on "Crops"; you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as
 published by the Free Software Foundation; either version 2.1
 of the license, or (at your option) any later version.
@@ -17,13 +17,13 @@ crops.settings = {}
 local settings = {}
 settings.easy = {
 	chance = 4,
-	interval = 30,
+	interval = 1,
 	light = 8,
 	watercan = 25,
 	watercan_max = 90,
 	watercan_uses = 20,
 	damage_chance = 8,
-	damage_interval = 30,
+	damage_interval = 1,
 	damage_tick_min = 0,
 	damage_tick_max = 1,
 	damage_max = 25,
@@ -31,13 +31,13 @@ settings.easy = {
 }
 settings.normal = {
 	chance = 8,
-	interval = 30,
+	interval = 300,
 	light = 10,
 	watercan = 25,
 	watercan_max = 90,
 	watercan_uses = 20,
 	damage_chance = 8,
-	damage_interval = 30,
+	damage_interval = 300,
 	damage_tick_min = 0,
 	damage_tick_max = 5,
 	damage_max = 50,
@@ -45,13 +45,13 @@ settings.normal = {
 }
 settings.difficult = {
 	chance = 16,
-	interval = 30,
+	interval = 300,
 	light = 13,
 	watercan = 25,
 	watercan_max = 100,
 	watercan_uses = 20,
 	damage_chance = 4,
-	damage_interval = 30,
+	damage_interval = 300,
 	damage_tick_min = 3,
 	damage_tick_max = 7,
 	damage_max = 100,
@@ -298,13 +298,15 @@ if crops.settings.hydration then
 end
 
 -- crop nodes, crafts, craftitems
-dofile(modpath .. "/melon.lua")
-dofile(modpath .. "/pumpkin.lua")
 dofile(modpath .. "/corn.lua")
-dofile(modpath .. "/tomato.lua")
-dofile(modpath .. "/potato.lua")
-dofile(modpath .. "/polebean.lua")
+dofile(modpath .. "/garlic.lua")
+dofile(modpath .. "/melon.lua")
+dofile(modpath .. "/onion.lua")
 dofile(modpath .. "/pepper.lua")
+dofile(modpath .. "/polebean.lua")
+dofile(modpath .. "/potato.lua")
+dofile(modpath .. "/pumpkin.lua")
+dofile(modpath .. "/tomato.lua")
 
 local nodenames = {}
 for i = 1,table.getn(crops.plants) do

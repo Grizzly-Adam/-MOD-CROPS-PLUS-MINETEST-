@@ -1,9 +1,9 @@
 
 --[[
+Copyright (C) 2018 Grizzly Adam
+Copyright (C) 2015-2017 Auke Kok <sofar@foo-projects.org>
 
-Copyright (C) 2015 - Auke Kok <sofar@foo-projects.org>
-
-"crops" is free software; you can redistribute it and/or modify
+"Crops Plus" is free software based on "Crops"; you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as
 published by the Free Software Foundation; either version 2.1
 of the license, or (at your option) any later version.
@@ -87,13 +87,33 @@ minetest.register_node("crops:melon_plant_5_attached", {
 minetest.register_craftitem("crops:melon_slice", {
 	description = S("Melon slice"),
 	inventory_image = "crops_melon_slice.png",
-	on_use = minetest.item_eat(1)
+	on_use = minetest.item_eat(2)
+})
+
+minetest.register_craftitem("crops:watermelon_juice", {
+	description = S("Watermelon Juice"),
+	inventory_image = "crops_watermelon_juice.png",
+	on_use = minetest.item_eat(2)
+})
+
+minetest.register_craftitem("crops:watermelon_slush", {
+	description = S("Watermelon Slush"),
+	inventory_image = "crops_watermelon_slush.png",
+	on_use = minetest.item_eat(2)
 })
 
 minetest.register_craft({
 	type = "shapeless",
-	output = "crops:melon_seed",
-	recipe = { "crops:melon_slice" }
+	output = "crops:watermelon_juice",
+	recipe = { "crops:melon_slice" },
+	replacements = {{"crops:melon_slice","crops:melon_seed"}},
+})
+
+minetest.register_craft({
+	type = "shapeless",
+	output = "crops:watermelon_slush",
+	recipe = { "crops:melon_slice", "default:ice" },
+	replacements = {{"crops:melon_slice","crops:melon_seed"}},
 })
 
 --

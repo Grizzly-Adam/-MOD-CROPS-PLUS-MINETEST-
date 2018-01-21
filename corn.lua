@@ -1,9 +1,9 @@
 
 --[[
+Copyright (C) 2018 Grizzly Adam
+Copyright (C) 2015-2017 Auke Kok <sofar@foo-projects.org>
 
-Copyright (C) 2015 - Auke Kok <sofar@foo-projects.org>
-
-"crops" is free software; you can redistribute it and/or modify
+"Crops Plus" is free software based on "Crops"; you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as
 published by the Free Software Foundation; either version 2.1
 of the license, or (at your option) any later version.
@@ -57,7 +57,7 @@ minetest.register_craft({
 minetest.register_craftitem("crops:corn_on_the_cob", {
 	description = S("Corn on the Cob"),
 	inventory_image = "crops_corn_on_the_cob.png",
-	on_use = minetest.item_eat(1)
+	on_use = minetest.item_eat(3)
 })
 
 minetest.register_craft({

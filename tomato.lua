@@ -1,9 +1,9 @@
 
 --[[
+Copyright (C) 2018 Grizzly Adam
+Copyright (C) 2015-2017 Auke Kok <sofar@foo-projects.org>
 
-Copyright (C) 2015 - Auke Kok <sofar@foo-projects.org>
-
-"crops" is free software; you can redistribute it and/or modify
+"Crops Plus" is free software based on "Crops"; you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as
 published by the Free Software Foundation; either version 2.1
 of the license, or (at your option) any later version.
@@ -121,13 +121,22 @@ minetest.register_node("crops:tomato_plant_6", {
 minetest.register_craftitem("crops:tomato", {
 	description = S("Tomato"),
 	inventory_image = "crops_tomato.png",
-	on_use = minetest.item_eat(1)
+	on_use = minetest.item_eat(3)
+})
+
+minetest.register_craftitem("crops:tomato_sauce", {
+	description = S("Tomato Sauce"),
+	inventory_image = "crops_tomato_sauce.png",
+	groups = { vessel=1 },
+	on_use = minetest.item_eat(2)
+
 })
 
 minetest.register_craft({
 	type = "shapeless",
-	output = "crops:tomato_seed",
-	recipe = { "crops:tomato" }
+	output = "crops:tomato_sauce",
+	recipe = { "group:tomato" },
+	replacements = {{"group:tomato","crops:tomato_seed"}},
 })
 
 --

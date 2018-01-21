@@ -1,14 +1,13 @@
 
 --[[
+Copyright (C) 2018 Grizzly Adam
+Copyright (C) 2015-2017 Auke Kok <sofar@foo-projects.org>
 
-Copyright (C) 2018 - Grizzly Adam
-
-Based on Crops by Auke Kok <sofar@foo-projects.org>
-
-"crops" is free software; you can redistribute it and/or modify
+"Crops Plus" is free software based on "Crops"; you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as
 published by the Free Software Foundation; either version 2.1
 of the license, or (at your option) any later version.
+
 --]]
 
 minetest.register_node("crops:pepper_ground", {
@@ -47,7 +46,7 @@ minetest.register_node("crops:peppercorn", {
 	walkable = false,
 	paramtype = "light",
 	node_placement_prediction = "crops:pepper_plant_1",
-	groups = { peppercorn=1, snappy=3,flammable=3,flora=1,attached_node=1 },
+	groups = { peppercorn = 1, vessel=1, snappy=3,flammable=3,flora=1,attached_node=1 },
 	drop = {},
 	sounds = default.node_sound_leaves_defaults(),
 
@@ -158,7 +157,7 @@ minetest.register_node("crops:pepper_plant_6", {
 minetest.register_craftitem("crops:pepper", {
 	description = S("Pepper"),
 	inventory_image = "crops_pepper.png",
-	on_use = minetest.item_eat(1),
+	on_use = minetest.item_eat(2),
 	groups = { pepper=1 },
 })
 

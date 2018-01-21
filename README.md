@@ -1,6 +1,6 @@
-## Crops Plus - by Grizzly Adam
+## Crops Plus 1.0 - by Grizzly Adam
 
-Based on Crops by Auke Kok <sofar@foo-projects.org>
+An extension to the crops mod by Auke Kok <sofar@foo-projects.org>
 
 ## Configuration
 
@@ -43,20 +43,23 @@ are listed below.
 
 ## Plants
 
-1. Melons and pumpkins
+1. Melons
 
 Melon plants grow from melon seeds. Once a plant is mature (there
 are 5 stages) it will spawn a melon block adjacent to the plant.
 The melon block can be harvested by punching, and yields 3-5
-melon slices. The melon slice can be crafted to a melon seed.
+melon slices. The melon slice can be crafted into watermelon juice
+and watermelon slush (requires ice). Both recipeps return a melon
+seed.
 
+2. Pumpkins
 Pumpkins grow from pumpkin seeds, and are harvested to yield a
 pumpkin block. Each block can be cooked to yield one or more
 roast pumpkin chunks, which can be eaten. You can also craft
 the blocks to seeds. A pumpkin plant will only yield limited amounts
 of pumpkins. After a while they automatically wither.
 
-2. Corn.
+3. Corn.
 
 Corn plants are 2 blocks high, and yield corn cobs. These can be
 cooked to corn-on-the-cob, or processed to make corn seed (corn
@@ -67,16 +70,16 @@ Digging a mature plant yields the corn cob. A harvested corn plant
 be left as ornamental 2-block plant. Digging either top or bottom
 block works in all cases.
 
-3. Tomatoes.
+4. Tomatoes.
 
 Tomatoes appear to work simple enough, until you harvest them
 the first time: The plant stays! However, after the 3rd to 5th
 harvest, the plant wilts and needs to be removed, since no more
 tomatoes will grow on the plant. Per harvest you can get 1-2
-tomatoes only. You can craft the tomatoes to tomato seeds, as
-expected.
+tomatoes only. You can craft the tomatoes into tomato sauce.
+Tomato seeds are a byproduct of tomato sauce.
 
-4. Potatoes.
+5. Potatoes.
 
 The plants themselves don't drop anything. Only if the plant matures
 can you dig potatoes from the soil. If you can reach the soil from the
@@ -89,7 +92,7 @@ which are the clones that can grow back to potatoes. Be careful not
 to dig the plant when there's flowers! You have to wait until the soil
 below shows potatoes. It's fairly easy to see the difference, though.
 
-5. Green Beans
+6. Green Beans
 
 These green beans are unnaturally green, but there's so many
 of them that grow on a vine! Sadly, these beans don't grow beans
@@ -110,14 +113,37 @@ so you salvage the beanpole's sticks after harvesting in order to
 make more beanpoles again. It's a bit of work, but worth it, these
 beans are delicious!
 
-6. Peppers
+7. Peppers
 
-Peppers work the same as tomatoes. The seeds are peppercorns, when can be crafted with a glass bottle to make ground pepper.
+Peppers work the same as tomatoes. The seeds are peppercorns, which 
+can be crafted with a glass bottle to make ground pepper.
 
+8. Onions
+
+Onion seeds can be planted to produce onion plants. Once the plant 
+matures, seed pods become visible on top of the plants and onions 
+can be seen in the soil. Cut the top off the mature onion plant to 
+receive 1-3 seeds. Dig the onions from the soil to harvest up to 4 
+onions.
+
+9. Garlic
+
+Garlic is grown by planting garlic cloves. When the garlic plant 
+reaches maturity, purple flowers appear on top and a garlic bulb can be
+ seen emerging from the soil. The tops of the plant can then be cut
+ away and the garlic bulb can be dug to harvest. Garlic bulbs can be
+ divided into 9 garlic cloves. 9 garlic bulbs can be crafted into a 
+garlic braid, which can then be placed for decoration or broken back 
+down into 9 garlic bulbs.
 
 ## Cooking / Crafting
 
 The corn cobs can be cooked directly to make Corn-on-the-Cob.
+
+Tomatoes can be crafted into tomato sauce, which returns tomato sauce.
+
+Melon slices can be crafted into watermelon juice, or combined with ice
+ to make watermelon slush. Both recipes return melon seeds.
 
 This mod includes a bowl recipe. The bowl is made from clay lumps,
 which results in an unbaked clay bowl that needs to be baked in an
@@ -162,3 +188,4 @@ the humidity level of the plant: a dry plant will have 0% humidity
 and be a small red bar or no bar at all, and a soaked plant will
 have a full green bar. Be careful though! Some plants prefer to be
 at mid-level (yellow) instead of full wetness!
+
