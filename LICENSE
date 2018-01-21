@@ -1,35 +1,37 @@
-## Crops Plus - by Grizzly Adam
+=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~
 
-An extension to the crops mod by Auke Kok <sofar@foo-projects.org>
+All source code (lua):
+	(C) Auke Kok <sofar@foo-projects.org>
+	LGPL-2.0+
 
-See spdx.org/licenses to see what the License Identifiers used below mean.
-
-
-------------Code----------
-Crops Plus code is licensed under the LGPL-2.1
-(C) 2018 Grizzly Adam
-(C) 2015-2017 Auke Kok
-
-garlic.lua based on potato.lua
-onion.lua based on potato.lua
-pepper.lua based on tomato.lua
+Except the following files and modifications:
+ - garlic.lua (based on potato.lua)
+ - onion.lua (based on potato.lua)
+ - pepper.lua (based on tomato.lua)
 
  - init.lua modified Jan 12, 2018 to increase interval & damage interval, and to add new crops.
  - crop_setting.txt modified Jan 12, 2018 to set difficulty to easy by default
  - cornlua, & tomato.lua modified Jan 17, 2018 to change on_use = minetest.item_eat values.
  - tomato.lua modified Jan 20, 2018 to add tomato sauce to crafting recipe. Tomato seeds are now a byproduct of making tomato sauce.
  -melon.lua modified Jan 20, 2018 to change on_use = minetest.item_eat values, add watermelon juice and watermelon slush recipes, and make melon seeds a byproduct of watermelon juice and slush recipes.
+	(C) Grizzly Adam
+	LGPL-2.1+
 
 
-----------Textures----------
-Crops Plus Textures are licensed under the CC-BY-SA-3.0
-(C) 2018 Adam Grizzly ....
-(C) 2015-2017 Auke Kok ....
+All textures, models:
+	(C) Auke Kok <sofar@foo-projects.org>
+	CC-BY-SA-3.0
 
-All Garlic, Onions, Peppers, Tomato sauce, Watermelon Juice, and Watermelon Slush textures by Grizzly Adam
- 
+ Except all Garlic, All Onions, All Peppers, Tomato sauce, Watermelon Juice, and Watermelon Slush textures
+	(C) Grizzly Adam
+	CC-BY-SA-3.0
 
------------Sounds-----------
+Translations:
+ - de.po
+	(C) 2017 LNJ <git@lnj.li>
+	LGPL-2.0+
+
+Sounds:
  - crops_watercan_splash*
 	http://freesound.org/people/junggle/sounds/27361/
 	http://profiles.google.com/jun66le
@@ -37,13 +39,13 @@ All Garlic, Onions, Peppers, Tomato sauce, Watermelon Juice, and Watermelon Slus
  - crops_watercan_entering.ogg
 	http://freesound.org/people/Quistard/sounds/166824/
 	CC-BY-3.0
-
- - crops_flies.ogg --edited to shorten Jan 12, 2018
+ - crops_flies.ogg - edited to shorten Jan 12, 2018
 	http://www.freesound.org/people/galeku/sounds/46938/
 	CC0-1.0
-
  - crops_watercan_watering.ogg
 	http://www.freesound.org/people/Eakoontz/sounds/151736/
 	CC0-1.0
 
 * Sounds edited with audacity
+
+=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~
