@@ -1,6 +1,6 @@
 ## Crops Plus 1.0 - by Grizzly Adam
 
-An extension to the crops mod by Auke Kok <sofar@foo-projects.org>
+A fork of the Crops mod by Auke Kok <sofar@foo-projects.org>
 
 ## Configuration
 
